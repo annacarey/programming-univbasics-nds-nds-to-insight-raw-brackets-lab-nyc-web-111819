@@ -25,7 +25,7 @@ def directors_totals(nds)
     column_index = 0 
     total = 0
     p nds[row_index][:movies].length
-    while column_index <nds[row_index][:movies].length
+    while column_index <nds[row_index]
       total += nds[row_index][:movies][column_index][:worldwide_gross]
       result[nds[row_index][:name]] = total
       p nds[row_index][:movies][column_index][:worldwide_gross]
